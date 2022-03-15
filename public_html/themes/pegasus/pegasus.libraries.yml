@@ -1,0 +1,83 @@
+global-styling:
+    css:
+        theme:
+            libraries/bootstrap/css/bootstrap.min.css: {}
+            libraries/fontawesome/css/all.min.css: {}
+            css/style.css: {}
+            css/fonts.css: {}
+    js:
+        libraries/bootstrap/js/bootstrap.min.js: {}
+        libraries/fontawesome/js/all.min.js: {}
+        js/script.js: {}
+    dependencies:
+        - core/drupal
+        - core/drupalSettings
+        - core/jquery
+        - core/jquery.once
+
+swiper:
+    css:
+        theme:
+            https://unpkg.com/swiper@7.3.2/swiper-bundle.min.css: {type: external, minified: true}
+    js:
+        https://unpkg.com/swiper@7.3.2/swiper-bundle.min.js: {type: external, minified: true}
+
+rating:
+    css:
+        theme:
+            https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css: {type: external, minified: true}
+    js:
+        https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js: {type: external, minified: true}
+
+fancybox:
+    css:
+        theme:
+            libraries/fancybox/fancybox.min.css: {}
+    js:
+        libraries/fancybox/fancybox.min.js: {}
+
+front:
+    css:
+        theme:
+            css/front.css: {}
+    js:
+        js/front.js: {}
+
+node-teaser:
+    css:
+        theme:
+            css/node-teaser.css: {}
+
+node-full:
+    css:
+        theme:
+            css/node-full.css: {}
+
+game-teaser:
+    css:
+        theme:
+            css/game-teaser.css: {}
+
+game-full:
+    css:
+        theme:
+            css/game-full.css: {}
+    js:
+        js/game-full.js: {}
+
+career-full:
+    css:
+        theme:
+            css/career-full.css: {}
+    js:
+        js/career-full.js: {}
+
+careers:
+    css:
+        theme:
+            css/careers.css: {}
+
+contact:
+    css:
+        theme:
+            css/contact.css: {}

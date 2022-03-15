@@ -1,0 +1,43 @@
+<div{{ attributes }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="container">
+        <h2 class="title text-center">{{ content['#block_content'].get('field_title').getValue()[0].value }}</h2>
+        <div class="row justify-content-center mb-none-3">
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="overview-card">
+                    <div class="overview-card__icon">
+                        <img src="/themes/pegasus/images/gamepad.png" alt="gamepad.png" width="100" height="100">
+                    </div>
+                    <div class="overview-card__content">
+                        <h4 class="overview-card__number">+{{ content['#block_content'].get('field_games').getValue()[0].value }}</h4>
+                        <p>{{ 'Games' | t }}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="overview-card">
+                    <div class="overview-card__icon">
+                        <img src="/themes/pegasus/images/gamer.png" alt="gamer.png" width="100" height="100">
+                    </div>
+                    <div class="overview-card__content">
+                        <h4 class="overview-card__number">+{{ content['#block_content'].get('field_player').getValue()[0].value }}</h4>
+                        <p>{{ 'Player' | t }}</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="overview-card">
+                    <div class="overview-card__icon">
+                        <img src="/themes/pegasus/images/trophy.png" alt="trophy.png" width="100" height="100">
+                    </div>
+                    <div class="overview-card__content">
+                        <h4 class="overview-card__number">+{{ content['#block_content'].get('field_years').getValue()[0].value }}</h4>
+                        <p>{{ 'Years' | t }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

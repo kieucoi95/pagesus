@@ -1,0 +1,79 @@
+.views-field:nth-child(2n) {
+    background: hsla(207,5%,42%,.03);
+}
+
+.jobv2 {
+    display: grid;
+    grid-template-columns: 4fr 2fr 1fr 1fr;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-gap: 0.6rem;
+    transition: all .3s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0;
+    border: 1px solid hsla(207,5%,42%,.1);
+    border-top: none;
+}
+
+.views-field:first-child .jobv2 {
+    border-top: 1px solid hsla(207,5%,42%,.1);;
+}
+
+.jobv2 .title {
+    font-size: 1rem;
+    font-weight: 400;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    color: #151c22;
+    line-height: 25.6px;
+    color: var(--orange);
+    font-weight: 600;
+}
+
+.jobv2 .department, .jobv2 .location {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #666c71;
+}
+
+.jobv2 .btn-apply {
+    justify-self: end;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: var(--blue);
+}
+
+.jobv2>a {
+    padding: 1.2rem 1.5rem;
+}
+
+.jobv2:hover {
+    background: #fff;
+    box-shadow: 0 30px 25px -15px rgb(18 98 251 / 20%), 0 15px 40px -10px rgb(0 0 0 / 20%);
+    border-radius: 0.5rem;
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: none;
+    z-index: 3;
+    position: relative;
+}
+
+.container > ul {
+    margin: 50px 0;
+}
+
+@media (max-width: 480px) {
+    .jobv2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        grid-gap: unset;
+    }
+
+    .jobv2>a, .jobv2 .title {
+        padding: 15px;
+    }
+}

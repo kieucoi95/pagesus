@@ -1,0 +1,17 @@
+<div{{ attributes }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="page-banner">
+        <img src="{{ file_url(elements.content['#block_content'].field_image.0.entity.uri.value) }}" alt="{{ elements.content['#block_content'].field_image.0.alt }}">
+        <div class="container">
+            <div class="page-info text-center">
+                <h1 class="page-title">{{ content['#block_content'].get('field_title').getValue()[0].value }}</h1>
+                <i class="fad fa-light-ceiling"></i>
+                <div class="row justify-content-center">
+                    <div class="desc col-lg-8">{{ content['#block_content'].get('field_description').getValue()[0].value }}</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

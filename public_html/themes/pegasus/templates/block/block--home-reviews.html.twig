@@ -1,0 +1,25 @@
+<div{{ attributes }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="container">
+        <h2 class="title text-center">{{ content['#block_content'].get('field_title').getValue()[0].value }}</h2>
+        <div class="swiper slide_reviews">
+            <div class="swiper-wrapper">
+                {% for item in items %}
+                <div class="swiper-slide">
+                    <div class="info__user">
+                        <img src="{{ file_url(item.img) }}" alt="{{ item.name }}" height="80" width="80">
+                        <div class="inner">
+                            <div class="name">{{ item.name }}</div>
+                            <div class="rate" data-rating="{{ item.rating | round(1, 'floor') }}"></div>
+                        </div>
+                    </div>
+                    <div class="comments">{{ item.description }}</div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</div>

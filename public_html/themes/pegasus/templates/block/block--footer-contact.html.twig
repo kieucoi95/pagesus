@@ -1,0 +1,14 @@
+<div{{ attributes }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="address_wrapper">
+        <ul>
+            <li><i class="fad fa-map-marked-alt"></i>{{ content['#block_content'].get('field_address').getValue()[0].value }}</li>
+            <li><a href="mailto:{{ content['#block_content'].get('field_email').getValue()[0].value }}"><i class="fad fa-mailbox"></i>{{ content['#block_content'].get('field_email').getValue()[0].value }}</a></li>
+            <li><a href="tel:{{ content['#block_content'].get('field_phone_number').getValue()[0].value }}"><i class="fad fa-phone-alt"></i>{{ content['#block_content'].get('field_phone_number').getValue()[0].value }}</a></li>
+        </ul>
+        <div class="social">
+            {{ content.field_social_media }}
+        </div>
+    </div>
+</div>

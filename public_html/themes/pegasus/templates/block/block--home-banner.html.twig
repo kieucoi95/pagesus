@@ -1,0 +1,16 @@
+<div{{ attributes }}>
+    {{ title_prefix }}
+    {{ title_suffix }}
+    <div class="bg_img" style="background-image: url( {{ file_url(elements.content['#block_content'].field_image.0.entity.uri.value) }} );">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="sub-title">{{ content['#block_content'].get('field_subtitle').getValue()[0].value }}</div>
+                    <h2 class="title">{{ content['#block_content'].get('field_title').getValue()[0].value }}</h2>
+                    <p class="description">{{ content['#block_content'].get('field_description').getValue()[0].value }}</p>
+                    <a href="{{ content['#block_content'].get('field_link').getValue()[0].value }}" class="banner-btn btn-pe">play now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
